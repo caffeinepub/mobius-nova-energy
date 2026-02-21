@@ -1,0 +1,60 @@
+{
+  "kind": "build_request",
+  "title": "Replace founder expertise content with pilot partnership messaging",
+  "projectName": "Mobius Nova Energy",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-19",
+      "text": "Remove the content from the seven selected elements in section[5] that currently display founder Navy ET background, veteran-founded messaging, and multi-modal technology differentiation",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-current"
+        ],
+        "quotes": [
+          "Remove these and replace with"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All content in the seven selected elements (XPath /html[1]/body[1]/div[1]/div[1]/section[5]/div[2]/div[3]/div[1] through div[3]/div[2]) is removed",
+        "No Navy ET background messaging remains visible",
+        "No veteran-founded messaging remains visible",
+        "No multi-modal technology differentiation content remains visible"
+      ]
+    },
+    {
+      "id": "REQ-20",
+      "text": "Replace the removed content in the selected section[5] elements with two new messages: 'Seeking first pilot installation partners' and 'Pre-commercial prototype stage — be among the first'",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-current"
+        ],
+        "quotes": [
+          "replace with\"Seeking first pilot installation partners\" \"Pre-commercial prototype stage — be among the first\""
+        ]
+      },
+      "acceptanceCriteria": [
+        "The text 'Seeking first pilot installation partners' is displayed in the selected section",
+        "The text 'Pre-commercial prototype stage — be among the first' is displayed in the selected section",
+        "Both messages use MOBIUS-NOVA brand typography and styling consistent with other landing page sections",
+        "The messages are arranged in a visually appealing layout within the existing section structure"
+      ]
+    }
+  ],
+  "constraints": [
+    "Only modify the seven selected elements in section[5] of the landing page",
+    "Maintain MOBIUS-NOVA brand styling (Montserrat font, brand colors, typography guidelines)",
+    "Do not modify other sections of the landing page"
+  ],
+  "nonGoals": [
+    "Adding new sections beyond the selected area",
+    "Changing the overall page layout or structure",
+    "Modifying hero section, features section, benefits section, or footer"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

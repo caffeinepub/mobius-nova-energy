@@ -1,0 +1,48 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-21T09:15:39.841Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 2,
+    "implemented": 2,
+    "items": [
+      {
+        "id": "REQ-19",
+        "summary": "Remove the content from the seven selected elements in section[5] that currently display founder Navy ET background, veteran-founded messaging, and multi-modal technology differentiation",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/FounderExpertiseSection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/FounderExpertiseSection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-20",
+        "summary": "Replace the removed content in the selected section[5] elements with two new messages: 'Seeking first pilot installation partners' and 'Pre-commercial prototype stage — be among the first'",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/FounderExpertiseSection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/FounderExpertiseSection.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/components/FounderExpertiseSection.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

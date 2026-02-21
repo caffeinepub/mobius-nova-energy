@@ -1,0 +1,204 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 13,
+  "summary": "Mobius Nova Energy landing page with static enlarged logo, following unified brand guidelines",
+  "architectural_notes": [
+    "Brand name: MOBIUS-NOVA (always full caps)",
+    "Primary font: Montserrat (Bold for headings, Regular for body)",
+    "Color palette: Liquid Silver (#C0C0C0), Nova Gold (#FFD700), Deep Space Black (#0D0D0D), Cosmic Blue (#1E90FF), Solar White (#FFFFFF)",
+    "Tagline: 'Lighting the way to the future and beyond' - centered under logo"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-landing-page-that-uses-the-provided-mobius-nova-energy-logo-image-1000008424-jpg-as-the-hero-logo-prominently-displaying-the-infinity-symbol-with-dog-rose-stem-and-branding-text-lighting-the-way-to-the-future-and-beyond",
+      "title": "Create a landing page that uses the provided Mobius Nova Energy logo image (1000008424.jpg) as the hero logo, prominently displaying the infinity symbol with dog, rose stem, and branding text 'LIGHTING THE WAY TO THE FUTURE AND BEYOND'",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-the-landing-page-with-a-sophisticated-premium-aesthetic-that-complements-the-metallic-silver-and-warm-gold-tones-of-the-mobius-nova-energy-logo-using-a-dark-background-theme-consistent-with-the-logo-s-presentation",
+      "title": "Design the landing page with a sophisticated, premium aesthetic that complements the metallic silver and warm gold tones of the Mobius Nova Energy logo, using a dark background theme consistent with the logo's presentation",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-hero-section-content-below-or-around-the-logo-that-introduces-mobius-nova-energy-with-a-compelling-tagline-and-brief-description",
+      "title": "Add hero section content below or around the logo that introduces Mobius Nova Energy with a compelling tagline and brief description",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-include-additional-landing-page-sections-such-as-features-benefits-or-call-to-action-areas-that-support-the-energy-innovation-theme",
+      "title": "Include additional landing page sections such as features, benefits, or call-to-action areas that support the energy/innovation theme",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-increase-the-size-of-the-mobius-nova-energy-logo-in-the-hero-section-to-make-it-more-prominent-on-the-landing-page",
+      "title": "Increase the size of the Mobius Nova Energy logo in the hero section to make it more prominent on the landing page",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-liquid-flowing-ripple-animation-effect-to-the-m-bius-loop-portion-of-the-logo-creating-a-dynamic-visual-representation-of-liquid-silver-movement",
+      "title": "Add a liquid flowing ripple animation effect to the Möbius loop portion of the logo, creating a dynamic visual representation of liquid silver movement",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-landing-page-color-palette-to-use-the-official-mobius-nova-brand-colors-liquid-silver-c0c0c0-nova-gold-ffd700-deep-space-black-0d0d0d-cosmic-blue-1e90ff-and-solar-white-ffffff",
+      "title": "Update the landing page color palette to use the official MOBIUS-NOVA brand colors: Liquid Silver (#C0C0C0), Nova Gold (#FFD700), Deep Space Black (#0D0D0D), Cosmic Blue (#1E90FF), and Solar White (#FFFFFF)",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-montserrat-as-the-primary-font-family-throughout-the-landing-page-with-bold-weight-for-headings-and-regular-weight-for-body-text-with-arial-and-helvetica-as-backup-fonts",
+      "title": "Implement Montserrat as the primary font family throughout the landing page with Bold weight for headings and Regular weight for body text, with Arial and Helvetica as backup fonts",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-format-all-branding-text-with-mobius-nova-in-full-caps-and-ensure-the-tagline-lighting-the-way-to-the-future-and-beyond-is-displayed-in-sentence-case-centered-under-the-logo",
+      "title": "Format all branding text with MOBIUS-NOVA in full caps and ensure the tagline 'Lighting the way to the future and beyond' is displayed in sentence case centered under the logo",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-the-brand-guideline-typography-sizing-recommendations-use-18-24pt-for-headings-and-11-12pt-for-body-text-with-all-caps-formatting-for-headings-throughout-the-landing-page",
+      "title": "Apply the brand guideline typography sizing recommendations: use 18-24pt for headings and 11-12pt for body text, with all-caps formatting for headings throughout the landing page",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-lighting-effect-to-the-m-bius-loop-portion-of-the-logo-1000008424-jpg-that-makes-the-loop-appear-brighter-as-the-animation-progresses-along-the-path-of-the-infinity-symbol-creating-a-traveling-light-effect-that-moves-through-the-loop",
+      "title": "Add a lighting effect to the Möbius loop portion of the logo (1000008424.jpg) that makes the loop appear brighter as the animation progresses along the path of the infinity symbol, creating a traveling light effect that moves through the loop",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-liquid-ripple-animation-effect-from-the-m-bius-loop-portion-of-the-logo-in-the-hero-section",
+      "title": "Remove the liquid ripple animation effect from the Möbius loop portion of the logo in the hero section",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-traveling-light-effect-that-makes-the-m-bius-loop-appear-brighter-as-it-progresses-along-the-infinity-symbol-path",
+      "title": "Remove the traveling light effect that makes the Möbius loop appear brighter as it progresses along the infinity symbol path",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-display-the-mobius-nova-logo-1000008424-jpg-as-a-static-image-in-the-hero-section-without-any-animation-effects",
+      "title": "Display the MOBIUS-NOVA logo (1000008424.jpg) as a static image in the hero section without any animation effects",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-existing-placeholder-section-from-the-landing-page-that-contains-pre-commercial-prototype-stage-be-among-the-first-target-output-4-5-8-0-kw-validated-by-engineering-analysis-veteran-founded-designed-from-the-ground-up-for-distributed-deployment-and-seeking-first-pilot-installation-partners",
+      "title": "Remove the existing placeholder section from the landing page that contains 'Pre-commercial prototype stage — be among the first', 'Target output: 4.5–8.0 kW validated by engineering analysis', 'Veteran-founded, designed from the ground up for distributed deployment', and 'Seeking first pilot installation partners'",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-new-section-highlighting-the-founder-s-navy-et-electronics-technician-background-with-the-messaging-designed-by-someone-who-actually-understands-the-electrical-systems-not-just-the-business-case",
+      "title": "Add a new section highlighting the founder's Navy ET (Electronics Technician) background with the messaging 'designed by someone who actually understands the electrical systems, not just the business case'",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-messaging-about-veteran-founded-and-service-connected-status-that-resonates-with-off-grid-rural-and-preparedness-minded-customers",
+      "title": "Add messaging about veteran-founded and service-connected status that resonates with off-grid, rural, and preparedness-minded customers",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-content-highlighting-the-multi-modal-single-core-technology-as-a-unique-differentiator-emphasizing-that-most-competitors-offer-wind-only-or-hydro-only-solutions",
+      "title": "Add content highlighting the multi-modal single core technology as a unique differentiator, emphasizing that most competitors offer wind-only or hydro-only solutions",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-content-from-the-seven-selected-elements-in-section-5-that-currently-display-founder-navy-et-background-veteran-founded-messaging-and-multi-modal-technology-differentiation",
+      "title": "Remove the content from the seven selected elements in section[5] that currently display founder Navy ET background, veteran-founded messaging, and multi-modal technology differentiation",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-removed-content-in-the-selected-section-5-elements-with-two-new-messages-seeking-first-pilot-installation-partners-and-pre-commercial-prototype-stage-be-among-the-first",
+      "title": "Replace the removed content in the selected section[5] elements with two new messages: 'Seeking first pilot installation partners' and 'Pre-commercial prototype stage — be among the first'",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create landing page with user-provided image",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Enlarge the logo on the landing page",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Remove placeholder content section and replace with specified accurate information about Navy ET background, veteran-founded status, and multi-modal single core technology",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Remove Navy ET and veteran messaging sections and replace with 'Seeking first pilot installation partners' and 'Pre-commercial prototype stage — be among the first'",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "projectName": "Mobius Nova Energy",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-remove-the-content-from-the-seven-selected-elements-in-section-5-that-currently-display-founder-navy-et-background-veteran-founded-messaging-and-multi-modal-technology-differentiation",
+      "featureTitle": "Remove the content from the seven selected elements in section[5] that currently display founder Navy ET background, veteran-founded messaging, and multi-modal technology differentiation",
+      "files": [
+        "frontend/src/components/FounderExpertiseSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-19"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-replace-the-removed-content-in-the-selected-section-5-elements-with-two-new-messages-seeking-first-pilot-installation-partners-and-pre-commercial-prototype-stage-be-among-the-first",
+      "featureTitle": "Replace the removed content in the selected section[5] elements with two new messages: 'Seeking first pilot installation partners' and 'Pre-commercial prototype stage — be among the first'",
+      "files": [
+        "frontend/src/components/FounderExpertiseSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-20"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
