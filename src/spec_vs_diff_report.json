@@ -1,22 +1,21 @@
 {
   "kind": "spec_vs_diff_report",
   "version": "1.0",
-  "generatedAt": "2026-02-21T09:15:39.838Z",
-  "summary": "The diff implements both requirements by modifying the FounderExpertiseSection component to display the two requested pilot partnership messages with MOBIUS-NOVA brand styling. All requested changes to section[5] elements are present in the implementation.",
-  "missing_requirements": [],
-  "hallucinated_features": [
+  "generatedAt": "2026-02-21T17:11:17.958Z",
+  "summary": "The diff shows partial implementation of the requirements. REQ-22 (statistics removal from CallToActionSection) is implemented, but REQ-21 (newsletter signup bar removal) is missing. The email signup form that remains in CallToActionSection is the main CTA form (explicitly excluded from scope), not the newsletter signup bar that should be removed.",
+  "missing_requirements": [
     {
-      "description": "Added decorative visual elements including background gradient, horizontal line decoration, and decorative accent bar",
-      "reason": "BuildRequest specified only text content replacement ('Seeking first pilot installation partners' and 'Pre-commercial prototype stage — be among the first') with brand styling. The addition of background gradients, decorative lines, and accent bars was not requested in REQ-19 or REQ-20.",
-      "evidence": [
-        "frontend/src/components/FounderExpertiseSection.tsx"
-      ]
+      "id": "REQ-21",
+      "requirement": "Remove the newsletter signup bar displaying 'Join our newsletter for energy insights and exclusive offers' from the landing page",
+      "reason": "No evidence in the diff showing removal of a newsletter signup bar. The CallToActionSection.tsx shows an email signup form with 'Get Started' CTA, which matches the main CTA functionality that should be preserved per constraints. The newsletter bar described in REQ-21 appears to be a separate component that is not addressed in the changes.",
+      "evidence": []
     }
   ],
+  "hallucinated_features": [],
   "confidence": 0.85,
   "changed_files": [
     "frontend-file-summaries.txt",
-    "frontend/src/components/FounderExpertiseSection.tsx",
+    "frontend/src/components/CallToActionSection.tsx",
     "project_state.json"
   ]
 }

@@ -4,7 +4,7 @@
   "frontend/src/components/HeroSection.tsx": "Hero section displaying the static MOBIUS-NOVA logo without animations, with brand tagline, uppercase headings, and Nova Gold/Cosmic Blue gradient buttons.",
   "frontend/src/components/FeaturesSection.tsx": "Features section with six capability cards, now leading with Multi-Modal Single Core technology as the primary differentiator against wind-only or hydro-only competitors, using MOBIUS-NOVA brand colors and uppercase section headings with Cosmic Blue hover effects.",
   "frontend/src/components/BenefitsSection.tsx": "Benefits section with two-column layout displaying value propositions using brand colors, uppercase headings, Nova Gold check icons, and Cosmic Blue hover states.",
-  "frontend/src/components/CallToActionSection.tsx": "Call-to-action section with email signup form, uppercase headings, Nova Gold to Cosmic Blue gradient buttons, and statistics display using brand typography sizing guidelines.",
+  "frontend/src/components/CallToActionSection.tsx": "Call-to-action section with email signup form, uppercase headings, and Nova Gold to Cosmic Blue gradient button, with newsletter text and placeholder statistics removed.",
   "frontend/src/components/Footer.tsx": "Footer component with MOBIUS-NOVA branding in full caps, brand tagline, Cosmic Blue hover states, and caffeine.ai attribution with UTM tracking.",
   "frontend/src/hooks/useQueries.ts": "Placeholder file for React Query hooks, currently empty as no backend integration is needed for the static landing page.",
   "frontend/src/index.css": "Global styles with MOBIUS-NOVA brand colors in OKLCH format, Montserrat typography, and basic animation utilities for background elements (liquid ripple and traveling brightness animations removed).",

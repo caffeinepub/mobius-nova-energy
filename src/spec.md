@@ -1,11 +1,10 @@
 # Specification
 
 ## Summary
-**Goal:** Replace founder expertise messaging with pilot partnership opportunity messaging in the landing page section.
+**Goal:** Remove the newsletter signup bar and statistics section from the landing page.
 
 **Planned changes:**
-- Remove Navy ET background, veteran-founded, and multi-modal technology differentiation content from seven selected elements in section[5]
-- Replace removed content with two new messages: "Seeking first pilot installation partners" and "Pre-commercial prototype stage — be among the first"
-- Maintain MOBIUS-NOVA brand styling (Montserrat font, brand colors, typography)
+- Remove the newsletter signup bar displaying "Join our newsletter for energy insights and exclusive offers"
+- Remove the statistics section showing "10K+ Installations Worldwide", "99.9% System Uptime", and "50M+ kWh Generated" from the CallToActionSection
 
-**User-visible outcome:** Visitors will see pilot partnership messaging instead of founder expertise content in the selected section, inviting them to become early installation partners.
+**User-visible outcome:** The landing page displays a cleaner layout without the newsletter bar and statistics cards, while maintaining all other sections and the main CTA functionality.

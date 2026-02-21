@@ -1,39 +1,36 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Replace founder expertise content with pilot partnership messaging",
+  "title": "Remove newsletter signup and statistics sections",
   "requirements": [
     {
-      "id": "REQ-19",
-      "summary": "Remove founder Navy ET background, veteran-founded messaging, and multi-modal technology differentiation content from FounderExpertiseSection",
+      "id": "REQ-21",
+      "summary": "Remove the newsletter signup bar displaying 'Join our newsletter for energy insights and exclusive offers' from the landing page",
       "acceptanceCriteria": [
-        "All content in the seven selected elements (XPath /html[1]/body[1]/div[1]/div[1]/section[5]/div[2]/div[3]/div[1] through div[3]/div[2]) is removed",
-        "No Navy ET background messaging remains visible",
-        "No veteran-founded messaging remains visible",
-        "No multi-modal technology differentiation content remains visible"
+        "The newsletter signup bar with gradient styling is completely removed from the page",
+        "No newsletter-related UI elements remain visible"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/FounderExpertiseSection.tsx",
+          "path": "frontend/src/components/CallToActionSection.tsx",
           "operation": "modify",
-          "description": "Remove all existing content from the seven selected div elements within section[5] that currently display founder Navy ET background, veteran-founded status messaging, technical expertise highlights, military-grade precision content, and multi-modal technology differentiation. Clear the text content, headings, and descriptive paragraphs from these elements while maintaining the section structure and container hierarchy."
+          "description": "Remove the newsletter signup bar element containing the text 'Join our newsletter for energy insights and exclusive offers' along with its gradient background styling from the component"
         }
       ]
     },
     {
-      "id": "REQ-20",
-      "summary": "Add pilot partnership messaging to replace removed founder expertise content",
+      "id": "REQ-22",
+      "summary": "Remove the statistics section displaying '10K+ Installations Worldwide', '99.9% System Uptime', and '50M+ kWh Generated' from the CallToActionSection component",
       "acceptanceCriteria": [
-        "The text 'Seeking first pilot installation partners' is displayed in the selected section",
-        "The text 'Pre-commercial prototype stage — be among the first' is displayed in the selected section",
-        "Both messages use MOBIUS-NOVA brand typography and styling consistent with other landing page sections",
-        "The messages are arranged in a visually appealing layout within the existing section structure"
+        "The three statistics cards (installations, uptime, kWh) are completely removed",
+        "No placeholder statistics remain in the call-to-action area",
+        "The CallToActionSection layout adjusts appropriately after removing the statistics"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/FounderExpertiseSection.tsx",
+          "path": "frontend/src/components/CallToActionSection.tsx",
           "operation": "modify",
-          "description": "Replace the cleared content in section[5] with two new pilot partnership messages: 'Seeking first pilot installation partners' and 'Pre-commercial prototype stage — be among the first'. Apply MOBIUS-NOVA brand styling using Montserrat font family, brand colors (liquid-silver, nova-gold, cosmic-blue), and typography guidelines consistent with other landing page sections. Arrange the messages in a visually appealing layout within the existing div structure, using appropriate heading levels, spacing, and alignment to match the overall landing page design system."
+          "description": "Remove all three statistics display elements showing '10K+ Installations Worldwide', '99.9% System Uptime', and '50M+ kWh Generated', ensuring the remaining email signup form and CTA functionality remain intact and properly styled"
         }
       ]
     }

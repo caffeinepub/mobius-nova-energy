@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 13,
+  "projectStateVersion": 15,
   "summary": "Mobius Nova Energy landing page with static enlarged logo, following unified brand guidelines",
   "architectural_notes": [
     "Brand name: MOBIUS-NOVA (always full caps)",
@@ -170,6 +170,22 @@
         "REQ-20"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-remove-the-newsletter-signup-bar-displaying-join-our-newsletter-for-energy-insights-and-exclusive-offers-from-the-landing-page",
+      "title": "Remove the newsletter signup bar displaying 'Join our newsletter for energy insights and exclusive offers' from the landing page",
+      "reqIds": [
+        "REQ-21"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-statistics-section-displaying-10k-installations-worldwide-99-9-system-uptime-and-50m-kwh-generated-from-the-calltoactionsection-component",
+      "title": "Remove the statistics section displaying '10K+ Installations Worldwide', '99.9% System Uptime', and '50M+ kWh Generated' from the CallToActionSection component",
+      "reqIds": [
+        "REQ-22"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -194,6 +210,12 @@
     {
       "id": "AR-4",
       "summary": "Remove Navy ET and veteran messaging sections and replace with 'Seeking first pilot installation partners' and 'Pre-commercial prototype stage — be among the first'",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Remove newsletter signup bar and statistics section (installations/uptime/kWh)",
       "reqIds": [],
       "status": "pending"
     }

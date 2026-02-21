@@ -23,7 +23,7 @@ export function CallToActionSection() {
         </div>
 
         {/* Email signup form */}
-        <div className="max-w-md mx-auto mb-8">
+        <div className="max-w-md mx-auto">
           <div className="flex flex-col sm:flex-row gap-3">
             <div className="relative flex-1">
               <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-liquid-silver/60" />
@@ -40,25 +40,6 @@ export function CallToActionSection() {
               Get Started
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-          </div>
-          <p className="text-xs text-liquid-silver/60 mt-3">
-            Join our newsletter for energy insights and exclusive offers
-          </p>
-        </div>
-
-        {/* Stats */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-16 pt-16 border-t border-liquid-silver/20">
-          <div>
-            <div className="text-4xl md:text-5xl font-bold text-nova-gold mb-2">10K+</div>
-            <div className="text-sm text-liquid-silver/70">Installations Worldwide</div>
-          </div>
-          <div>
-            <div className="text-4xl md:text-5xl font-bold text-nova-gold mb-2">99.9%</div>
-            <div className="text-sm text-liquid-silver/70">System Uptime</div>
-          </div>
-          <div>
-            <div className="text-4xl md:text-5xl font-bold text-nova-gold mb-2">50M+</div>
-            <div className="text-sm text-liquid-silver/70">kWh Generated</div>
           </div>
         </div>
       </div>
