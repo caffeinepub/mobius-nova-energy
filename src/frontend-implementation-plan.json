@@ -1,36 +1,89 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Remove newsletter signup and statistics sections",
+  "title": "Create navigation pages with consistent styling and integrate additional image renders",
   "requirements": [
     {
-      "id": "REQ-21",
-      "summary": "Remove the newsletter signup bar displaying 'Join our newsletter for energy insights and exclusive offers' from the landing page",
+      "id": "REQ-23",
+      "summary": "Create dedicated page components for About, Technology, Features, and Contact with consistent MOBIUS-NOVA styling",
       "acceptanceCriteria": [
-        "The newsletter signup bar with gradient styling is completely removed from the page",
-        "No newsletter-related UI elements remain visible"
+        "About page component created with consistent MOBIUS-NOVA styling",
+        "Technology page component created with consistent MOBIUS-NOVA styling",
+        "Features page component created with consistent MOBIUS-NOVA styling",
+        "Contact page component created with consistent MOBIUS-NOVA styling",
+        "All pages use the same color palette, typography, and layout patterns as LandingPage",
+        "All pages include the Footer component for consistent navigation"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/CallToActionSection.tsx",
-          "operation": "modify",
-          "description": "Remove the newsletter signup bar element containing the text 'Join our newsletter for energy insights and exclusive offers' along with its gradient background styling from the component"
+          "path": "frontend/src/pages/AboutPage.tsx",
+          "operation": "create",
+          "description": "Create About page component with dark gradient background, MOBIUS-NOVA brand colors (Liquid Silver, Nova Gold, Deep Space Black, Cosmic Blue, Solar White), Montserrat font family, and consistent spacing/layout patterns matching the LandingPage. Include the Footer component for consistent navigation. Wire in the generated image frontend/public/assets/generated/about-background.dim_1200x800.png as a background or hero element."
+        },
+        {
+          "path": "frontend/src/pages/TechnologyPage.tsx",
+          "operation": "create",
+          "description": "Create Technology page component with dark gradient background, MOBIUS-NOVA brand colors, Montserrat font family, and consistent spacing/layout patterns matching the LandingPage. Include the Footer component for consistent navigation. Wire in the generated image frontend/public/assets/generated/technology-hero.dim_1200x600.png as a hero section image showcasing the multi-modal energy system."
+        },
+        {
+          "path": "frontend/src/pages/FeaturesPage.tsx",
+          "operation": "create",
+          "description": "Create Features page component with dark gradient background, MOBIUS-NOVA brand colors, Montserrat font family, and consistent spacing/layout patterns matching the LandingPage. Include the Footer component for consistent navigation. This page can expand on the capabilities shown in the FeaturesSection component with more detailed information."
+        },
+        {
+          "path": "frontend/src/pages/ContactPage.tsx",
+          "operation": "create",
+          "description": "Create Contact page component with dark gradient background, MOBIUS-NOVA brand colors, Montserrat font family, and consistent spacing/layout patterns matching the LandingPage. Include the Footer component for consistent navigation. Wire in the generated image frontend/public/assets/generated/contact-header.dim_1200x400.png as a header image with communication theme. Include contact form or contact information consistent with the brand styling."
         }
       ]
     },
     {
-      "id": "REQ-22",
-      "summary": "Remove the statistics section displaying '10K+ Installations Worldwide', '99.9% System Uptime', and '50M+ kWh Generated' from the CallToActionSection component",
+      "id": "REQ-24",
+      "summary": "Implement React Router for navigation between landing page and newly created pages",
       "acceptanceCriteria": [
-        "The three statistics cards (installations, uptime, kWh) are completely removed",
-        "No placeholder statistics remain in the call-to-action area",
-        "The CallToActionSection layout adjusts appropriately after removing the statistics"
+        "React Router configured in the application",
+        "Routes defined for landing page and all new pages",
+        "Footer navigation links updated to use React Router Link components",
+        "Browser URL updates when navigating between pages",
+        "Back/forward browser buttons work correctly"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/CallToActionSection.tsx",
+          "path": "frontend/src/App.tsx",
           "operation": "modify",
-          "description": "Remove all three statistics display elements showing '10K+ Installations Worldwide', '99.9% System Uptime', and '50M+ kWh Generated', ensuring the remaining email signup form and CTA functionality remain intact and properly styled"
+          "description": "Replace the direct LandingPage render with React Router configuration. Import BrowserRouter, Routes, and Route from react-router-dom. Define routes for the landing page (path '/'), About page (path '/about'), Technology page (path '/technology'), Features page (path '/features'), and Contact page (path '/contact'). Wrap all routes in BrowserRouter and Routes components."
+        },
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Update the Footer navigation links to use React Router Link components instead of href anchors. Import Link from react-router-dom and replace the anchor tags for About, Technology, Features, and Contact with Link components pointing to their respective routes (/about, /technology, /features, /contact). Maintain the existing visual design and styling without any changes to the Footer's appearance."
+        }
+      ]
+    },
+    {
+      "id": "REQ-25",
+      "summary": "Display user-provided image renders on appropriate pages as static assets from frontend/public/assets/generated",
+      "acceptanceCriteria": [
+        "Generated images are integrated into the appropriate page components",
+        "Images are served from frontend/public/assets/generated directory",
+        "Images maintain consistent styling with the rest of the pages",
+        "Images are responsive and properly sized for their context"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/technology-hero.dim_1200x600.png",
+          "operation": "create",
+          "description": "Generated image file for Technology page hero showcasing multi-modal energy system. This file will be created by the image generation system and referenced in TechnologyPage.tsx."
+        },
+        {
+          "path": "frontend/public/assets/generated/about-background.dim_1200x800.png",
+          "operation": "create",
+          "description": "Generated image file for About page background with energy innovation theme. This file will be created by the image generation system and referenced in AboutPage.tsx."
+        },
+        {
+          "path": "frontend/public/assets/generated/contact-header.dim_1200x400.png",
+          "operation": "create",
+          "description": "Generated image file for Contact page header with communication theme. This file will be created by the image generation system and referenced in ContactPage.tsx."
         }
       ]
     }

@@ -1,10 +1,13 @@
 # Specification
 
 ## Summary
-**Goal:** Remove the newsletter signup bar and statistics section from the landing page.
+**Goal:** Create navigation pages (About, Technology, Features, Contact) with consistent MOBIUS-NOVA styling and integrate user-provided image renders.
 
 **Planned changes:**
-- Remove the newsletter signup bar displaying "Join our newsletter for energy insights and exclusive offers"
-- Remove the statistics section showing "10K+ Installations Worldwide", "99.9% System Uptime", and "50M+ kWh Generated" from the CallToActionSection
+- Create About, Technology, Features, and Contact page components with consistent MOBIUS-NOVA brand styling (Liquid Silver, Nova Gold, Deep Space Black, Cosmic Blue, Solar White colors, Montserrat font, dark gradients)
+- Implement React Router for client-side navigation between pages
+- Update Footer navigation links to use React Router Link components instead of href anchors
+- Integrate user-provided image renders (1000008424.jpg, Screenshot_20260220_141756_Chrome.jpg, Screenshot_20260221_040633_Chrome.jpg, Screenshot_20260221_120848_Chrome.jpg) into appropriate pages
+- Display images as static assets from frontend/public/assets/generated directory
 
-**User-visible outcome:** The landing page displays a cleaner layout without the newsletter bar and statistics cards, while maintaining all other sections and the main CTA functionality.
+**User-visible outcome:** Users can navigate between the landing page and dedicated About, Technology, Features, and Contact pages with consistent styling, and view the integrated image renders on the appropriate pages.

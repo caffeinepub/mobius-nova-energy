@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 15,
+  "projectStateVersion": 17,
   "summary": "Mobius Nova Energy landing page with static enlarged logo, following unified brand guidelines",
   "architectural_notes": [
     "Brand name: MOBIUS-NOVA (always full caps)",
@@ -10,6 +10,7 @@
   ],
   "known_issues": [],
   "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Technology page hero image showcasing multi-modal energy system (technology-hero.dim_1200x600.png)\n- About page background image with energy innovation theme (about-background.dim_1200x800.png)\n- Contact page header image with communication theme (contact-header.dim_1200x400.png)",
   "existing_features": [
     {
       "id": "feature-create-a-landing-page-that-uses-the-provided-mobius-nova-energy-logo-image-1000008424-jpg-as-the-hero-logo-prominently-displaying-the-infinity-symbol-with-dog-rose-stem-and-branding-text-lighting-the-way-to-the-future-and-beyond",
@@ -186,6 +187,30 @@
         "REQ-22"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-create-dedicated-page-components-for-each-navigation-link-currently-in-the-footer-component-about-technology-features-contact-that-maintain-the-same-visual-styling-as-the-landing-page-including-mobius-nova-brand-colors-liquid-silver-nova-gold-deep-space-black-cosmic-blue-solar-white-montserrat-font-family-dark-gradient-backgrounds-and-consistent-spacing-layout-patterns",
+      "title": "Create dedicated page components for each navigation link currently in the Footer component (About, Technology, Features, Contact) that maintain the same visual styling as the landing page, including MOBIUS-NOVA brand colors (Liquid Silver, Nova Gold, Deep Space Black, Cosmic Blue, Solar White), Montserrat font family, dark gradient backgrounds, and consistent spacing/layout patterns",
+      "reqIds": [
+        "REQ-23"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-client-side-routing-using-react-router-to-enable-navigation-between-the-landing-page-and-the-newly-created-pages-about-technology-features-contact-updating-the-footer-navigation-links-to-use-proper-routing-instead-of-href-anchors",
+      "title": "Implement client-side routing using React Router to enable navigation between the landing page and the newly created pages (About, Technology, Features, Contact), updating the Footer navigation links to use proper routing instead of href anchors",
+      "reqIds": [
+        "REQ-24"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-display-the-user-provided-image-renders-on-the-appropriate-pages-among-the-newly-created-about-technology-features-and-contact-pages-rendering-them-as-static-assets-from-frontend-public-assets-generated",
+      "title": "Display the user-provided image renders on the appropriate pages among the newly created About, Technology, Features, and Contact pages, rendering them as static assets from frontend/public/assets/generated",
+      "reqIds": [
+        "REQ-25"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -216,6 +241,18 @@
     {
       "id": "AR-5",
       "summary": "Remove newsletter signup bar and statistics section (installations/uptime/kWh)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Create additional pages for navigation links with consistent styling",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Integrate additional image renders into new pages",
       "reqIds": [],
       "status": "pending"
     }

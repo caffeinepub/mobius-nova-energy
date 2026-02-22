@@ -1,14 +1,18 @@
 {
-  "frontend/src/App.tsx": "Main application component that renders the LandingPage component as the root view.",
+  "frontend/src/App.tsx": "Main application component with TanStack Router configuration defining routes for landing, about, technology, features, and contact pages with proper route tree structure.",
   "frontend/src/pages/LandingPage.tsx": "Landing page layout component composing all major sections with Deep Space Black gradient background, now including the new FounderExpertiseSection positioned between FeaturesSection and BenefitsSection to establish technical credibility early in the visitor journey.",
   "frontend/src/components/HeroSection.tsx": "Hero section displaying the static MOBIUS-NOVA logo without animations, with brand tagline, uppercase headings, and Nova Gold/Cosmic Blue gradient buttons.",
   "frontend/src/components/FeaturesSection.tsx": "Features section with six capability cards, now leading with Multi-Modal Single Core technology as the primary differentiator against wind-only or hydro-only competitors, using MOBIUS-NOVA brand colors and uppercase section headings with Cosmic Blue hover effects.",
   "frontend/src/components/BenefitsSection.tsx": "Benefits section with two-column layout displaying value propositions using brand colors, uppercase headings, Nova Gold check icons, and Cosmic Blue hover states.",
   "frontend/src/components/CallToActionSection.tsx": "Call-to-action section with email signup form, uppercase headings, and Nova Gold to Cosmic Blue gradient button, with newsletter text and placeholder statistics removed.",
-  "frontend/src/components/Footer.tsx": "Footer component with MOBIUS-NOVA branding in full caps, brand tagline, Cosmic Blue hover states, and caffeine.ai attribution with UTM tracking.",
+  "frontend/src/components/Footer.tsx": "Footer component with MOBIUS-NOVA branding, navigation links using TanStack Router Link components for internal pages, and caffeine.ai attribution with UTM tracking.",
   "frontend/src/hooks/useQueries.ts": "Placeholder file for React Query hooks, currently empty as no backend integration is needed for the static landing page.",
   "frontend/src/index.css": "Global styles with MOBIUS-NOVA brand colors in OKLCH format, Montserrat typography, and basic animation utilities for background elements (liquid ripple and traveling brightness animations removed).",
   "frontend/tailwind.config.js": "Tailwind configuration with MOBIUS-NOVA brand color palette, Montserrat font family for both sans and heading, and extended color utilities matching the brand guidelines.",
   "frontend/index.html": "HTML entry point with MOBIUS-NOVA title and Montserrat font import from Google Fonts with Regular (400) and Bold (700) weights.",
-  "frontend/src/components/FounderExpertiseSection.tsx": "Section component displaying pilot partnership messaging with centered layout, featuring \"Seeking first pilot installation partners\" and \"Pre-commercial prototype stage — be among the first\" using MOBIUS-NOVA brand styling with Nova Gold and Cosmic Blue accents."
+  "frontend/src/components/FounderExpertiseSection.tsx": "Section component displaying pilot partnership messaging with centered layout, featuring \"Seeking first pilot installation partners\" and \"Pre-commercial prototype stage — be among the first\" using MOBIUS-NOVA brand styling with Nova Gold and Cosmic Blue accents.",
+  "frontend/src/pages/AboutPage.tsx": "About page component with MOBIUS-NOVA brand styling, mission statement, core values, and background image integration from generated assets.",
+  "frontend/src/pages/TechnologyPage.tsx": "Technology page component showcasing multi-modal energy system with hero image, technical specifications, and detailed feature explanations using consistent MOBIUS-NOVA styling.",
+  "frontend/src/pages/FeaturesPage.tsx": "Features page component displaying comprehensive capabilities grid, performance metrics, and integration information with MOBIUS-NOVA brand colors and typography.",
+  "frontend/src/pages/ContactPage.tsx": "Contact page component with contact form, contact information cards, header image integration, and pilot partnership CTA using MOBIUS-NOVA styling."
 }

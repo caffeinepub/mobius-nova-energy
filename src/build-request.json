@@ -1,59 +1,87 @@
 {
   "kind": "build_request",
-  "title": "Remove newsletter signup and statistics sections",
-  "projectName": "Mobius Nova Energy",
+  "title": "Create navigation pages with consistent styling and integrate additional image renders",
+  "projectName": "MOBIUS-NOVA Energy",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-21",
-      "text": "Remove the newsletter signup bar displaying 'Join our newsletter for energy insights and exclusive offers' from the landing page",
+      "id": "REQ-23",
+      "text": "Create dedicated page components for each navigation link currently in the Footer component (About, Technology, Features, Contact) that maintain the same visual styling as the landing page, including MOBIUS-NOVA brand colors (Liquid Silver, Nova Gold, Deep Space Black, Cosmic Blue, Solar White), Montserrat font family, dark gradient backgrounds, and consistent spacing/layout patterns",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-latest"
         ],
         "quotes": [
-          "The circled sections",
-          "Join our newsletter for energy insights and exclusive offers"
+          "can we work on pages for the links to lead to keep the same style"
         ]
       },
       "acceptanceCriteria": [
-        "The newsletter signup bar with gradient styling is completely removed from the page",
-        "No newsletter-related UI elements remain visible"
+        "About page component created with consistent MOBIUS-NOVA styling",
+        "Technology page component created with consistent MOBIUS-NOVA styling",
+        "Features page component created with consistent MOBIUS-NOVA styling",
+        "Contact page component created with consistent MOBIUS-NOVA styling",
+        "All pages use the same color palette, typography, and layout patterns as LandingPage",
+        "All pages include the Footer component for consistent navigation"
       ]
     },
     {
-      "id": "REQ-22",
-      "text": "Remove the statistics section displaying '10K+ Installations Worldwide', '99.9% System Uptime', and '50M+ kWh Generated' from the CallToActionSection component",
+      "id": "REQ-24",
+      "text": "Implement client-side routing using React Router to enable navigation between the landing page and the newly created pages (About, Technology, Features, Contact), updating the Footer navigation links to use proper routing instead of href anchors",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-latest"
         ],
         "quotes": [
-          "The circled sections",
-          "10K+ Installations Worldwide",
-          "99.9% System Uptime",
-          "50M+ kWh Generated"
+          "pages for the links to lead to"
         ]
       },
       "acceptanceCriteria": [
-        "The three statistics cards (installations, uptime, kWh) are completely removed",
-        "No placeholder statistics remain in the call-to-action area",
-        "The CallToActionSection layout adjusts appropriately after removing the statistics"
+        "React Router configured in the application",
+        "Routes defined for landing page and all new pages",
+        "Footer navigation links updated to use React Router Link components",
+        "Browser URL updates when navigating between pages",
+        "Back/forward browser buttons work correctly"
+      ]
+    },
+    {
+      "id": "REQ-25",
+      "text": "Display the user-provided image renders on the appropriate pages among the newly created About, Technology, Features, and Contact pages, rendering them as static assets from frontend/public/assets/generated",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "i have other image renders to use on some of tem"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Generated images are integrated into the appropriate page components",
+        "Images are served from frontend/public/assets/generated directory",
+        "Images maintain consistent styling with the rest of the pages",
+        "Images are responsive and properly sized for their context"
       ]
     }
   ],
   "constraints": [
-    "Do not modify the main CTA functionality or email signup form in CallToActionSection",
-    "Preserve all other sections of the landing page"
+    "Maintain the existing MOBIUS-NOVA brand guidelines throughout all new pages",
+    "Do not modify the Footer component's visual design, only update navigation mechanism",
+    "Keep the LandingPage component intact as the home/root route"
   ],
   "nonGoals": [
-    "Adding replacement content for the removed sections",
-    "Modifying any other statistics or metrics elsewhere on the page"
+    "Adding new navigation sections not mentioned in the current Footer",
+    "Implementing server-side rendering or static site generation",
+    "Creating authentication-protected pages",
+    "Adding blog or dynamic content management features"
   ],
   "imageRequirements": {
-    "required": [],
+    "required": [
+      "Technology page hero image showcasing multi-modal energy system (technology-hero.dim_1200x600.png)",
+      "About page background image with energy innovation theme (about-background.dim_1200x800.png)",
+      "Contact page header image with communication theme (contact-header.dim_1200x400.png)"
+    ],
     "edits": []
   }
 }

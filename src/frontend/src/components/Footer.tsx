@@ -1,5 +1,6 @@
 import { SiFacebook, SiX, SiLinkedin, SiInstagram } from 'react-icons/si';
 import { Heart } from 'lucide-react';
+import { Link } from '@tanstack/react-router';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -13,9 +14,9 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand column */}
           <div className="md:col-span-2">
-            <div className="text-2xl font-bold text-liquid-silver mb-3 uppercase">
+            <Link to="/" className="text-2xl font-bold text-liquid-silver mb-3 uppercase block hover:text-cosmic-blue transition-colors">
               MOBIUS-NOVA
-            </div>
+            </Link>
             <p className="text-sm text-liquid-silver/70 mb-4 max-w-md">
               Lighting the way to the future and beyond with innovative renewable energy solutions.
             </p>
@@ -56,6 +57,16 @@ export function Footer() {
             <h3 className="text-liquid-silver font-bold mb-3 text-sm uppercase">Solutions</h3>
             <ul className="space-y-2">
               <li>
+                <Link to="/technology" className="text-sm text-liquid-silver/70 hover:text-cosmic-blue transition-colors">
+                  Technology
+                </Link>
+              </li>
+              <li>
+                <Link to="/features" className="text-sm text-liquid-silver/70 hover:text-cosmic-blue transition-colors">
+                  Features
+                </Link>
+              </li>
+              <li>
                 <a href="#" className="text-sm text-liquid-silver/70 hover:text-cosmic-blue transition-colors">
                   Residential
                 </a>
@@ -63,16 +74,6 @@ export function Footer() {
               <li>
                 <a href="#" className="text-sm text-liquid-silver/70 hover:text-cosmic-blue transition-colors">
                   Commercial
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-sm text-liquid-silver/70 hover:text-cosmic-blue transition-colors">
-                  Industrial
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-sm text-liquid-silver/70 hover:text-cosmic-blue transition-colors">
-                  Utility Scale
                 </a>
               </li>
             </ul>
@@ -83,9 +84,9 @@ export function Footer() {
             <h3 className="text-liquid-silver font-bold mb-3 text-sm uppercase">Company</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-sm text-liquid-silver/70 hover:text-cosmic-blue transition-colors">
+                <Link to="/about" className="text-sm text-liquid-silver/70 hover:text-cosmic-blue transition-colors">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#" className="text-sm text-liquid-silver/70 hover:text-cosmic-blue transition-colors">
@@ -93,9 +94,9 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-liquid-silver/70 hover:text-cosmic-blue transition-colors">
+                <Link to="/contact" className="text-sm text-liquid-silver/70 hover:text-cosmic-blue transition-colors">
                   Contact
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#" className="text-sm text-liquid-silver/70 hover:text-cosmic-blue transition-colors">
