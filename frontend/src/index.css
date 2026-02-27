@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.5rem;
+        
+        /* MOBIUS-NOVA Brand Colors */
+        --liquid-silver: 0.85 0.02 240;
+        --nova-gold: 0.85 0.18 85;
+        --deep-space-black: 0.08 0 0;
+        --cosmic-blue: 0.60 0.20 240;
+        --solar-white: 0.99 0 0;
+        
+        /* Dark background colors */
+        --dark-bg: 0.08 0 0;
+        --dark-bg-secondary: 0.11 0 0;
+        --dark-card: 0.14 0 0;
+        
+        /* Semantic colors using brand palette */
+        --background: var(--deep-space-black);
+        --foreground: var(--liquid-silver);
+        --card: var(--dark-card);
+        --card-foreground: var(--liquid-silver);
+        --popover: 0.14 0 0;
+        --popover-foreground: var(--liquid-silver);
+        --primary: var(--nova-gold);
+        --primary-foreground: var(--deep-space-black);
+        --secondary: 0.18 0 0;
+        --secondary-foreground: var(--liquid-silver);
+        --muted: 0.18 0 0;
+        --muted-foreground: 0.55 0 0;
+        --accent: var(--cosmic-blue);
+        --accent-foreground: var(--solar-white);
+        --destructive: 0.577 0.245 27.325;
+        --destructive-foreground: 0.985 0 0;
+        --border: 1 0 0 / 12%;
+        --input: 1 0 0 / 12%;
+        --ring: var(--nova-gold);
+    }
+
+    .dark {
+        --background: var(--deep-space-black);
+        --foreground: var(--liquid-silver);
+        --card: var(--dark-card);
+        --card-foreground: var(--liquid-silver);
+        --popover: 0.14 0 0;
+        --popover-foreground: var(--liquid-silver);
+        --primary: var(--nova-gold);
+        --primary-foreground: var(--deep-space-black);
+        --secondary: 0.18 0 0;
+        --secondary-foreground: var(--liquid-silver);
+        --muted: 0.18 0 0;
+        --muted-foreground: 0.55 0 0;
+        --accent: var(--cosmic-blue);
+        --accent-foreground: var(--solar-white);
+        --destructive: 0.577 0.245 27.325;
+        --destructive-foreground: 0.985 0 0;
+        --border: 1 0 0 / 12%;
+        --input: 1 0 0 / 12%;
+        --ring: var(--nova-gold);
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        font-size: 12pt;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        font-weight: 700;
+    }
+}
+
+@layer utilities {
+    /* Custom brand color utilities */
+    .text-liquid-silver {
+        color: oklch(var(--liquid-silver));
+    }
+    
+    .text-nova-gold {
+        color: oklch(var(--nova-gold));
+    }
+    
+    .text-deep-space-black {
+        color: oklch(var(--deep-space-black));
+    }
+    
+    .text-cosmic-blue {
+        color: oklch(var(--cosmic-blue));
+    }
+    
+    .text-solar-white {
+        color: oklch(var(--solar-white));
+    }
+    
+    .bg-liquid-silver {
+        background-color: oklch(var(--liquid-silver));
+    }
+    
+    .bg-nova-gold {
+        background-color: oklch(var(--nova-gold));
+    }
+    
+    .bg-deep-space-black {
+        background-color: oklch(var(--deep-space-black));
+    }
+    
+    .bg-cosmic-blue {
+        background-color: oklch(var(--cosmic-blue));
+    }
+    
+    .bg-dark-bg {
+        background-color: oklch(var(--dark-bg));
+    }
+    
+    .bg-dark-bg-secondary {
+        background-color: oklch(var(--dark-bg-secondary));
+    }
+    
+    .bg-dark-card {
+        background-color: oklch(var(--dark-card));
+    }
+    
+    .border-liquid-silver {
+        border-color: oklch(var(--liquid-silver));
+    }
+    
+    .border-nova-gold {
+        border-color: oklch(var(--nova-gold));
+    }
+    
+    .border-cosmic-blue {
+        border-color: oklch(var(--cosmic-blue));
+    }
+    
+    /* Custom gradient utilities */
+    .bg-gradient-radial {
+        background-image: radial-gradient(circle, var(--tw-gradient-stops));
+    }
+    
+    /* Custom shadow utilities */
+    .shadow-nova-gold {
+        box-shadow: 0 4px 20px -2px oklch(var(--nova-gold) / 0.3);
+    }
+    
+    .shadow-nova-gold-glow {
+        box-shadow: 0 0 30px -5px oklch(var(--nova-gold) / 0.4);
+    }
+    
+    .shadow-cosmic-blue-glow {
+        box-shadow: 0 0 30px -5px oklch(var(--cosmic-blue) / 0.3);
+    }
+    
+    /* Custom animations */
+    @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+    }
+    
+    @keyframes float-delayed {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-30px); }
+    }
+    
+    @keyframes pulse-slow {
+        0%, 100% { opacity: 0.5; }
+        50% { opacity: 0.8; }
+    }
+    
+    .animate-float {
+        animation: float 6s ease-in-out infinite;
+    }
+    
+    .animate-float-delayed {
+        animation: float-delayed 8s ease-in-out infinite;
+    }
+    
+    .animate-pulse-slow {
+        animation: pulse-slow 4s ease-in-out infinite;
+    }
+}

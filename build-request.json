@@ -1,0 +1,232 @@
+{
+  "kind": "build_request",
+  "title": "Build full MOBIUS-NOVA investor & test site landing page with uploaded assets",
+  "projectName": "MOBIUS-NOVA Energy",
+  "priority": "high",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Rebuild the LandingPage.tsx as a complete, fully-featured single-page site with the following sections in order: Hero, The Technology, Product Renders, Key Specs, Investor Pitch, Become a Test Site (sign-up form), and Contact/Get Involved. The page must use Deep Space Black (#0D0D0D) background, Liquid Silver (#C0C0C0), Nova Gold (#FFD700), and Cosmic Blue (#1E90FF) accents, Montserrat Bold all-caps headings throughout, and render correctly in production without crashing or blank-screen issues.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-16",
+          "msg-18"
+        ],
+        "quotes": [
+          "Attract investors and get some early test subjects and locations",
+          "Goals: Attract investors + recruit early test sites/partners"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Page loads fully in both draft and live deployments without a blank screen",
+        "All seven sections are visible and scroll correctly",
+        "Brand colors, Montserrat font, and all-caps headings are consistently applied throughout"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "In the Hero section, display the MOBIUS-NOVA logo image (mobius-nova-logo.dim_1024x1024.png) prominently centered and enlarged. Below the logo show the tagline 'LIGHTING THE WAY TO THE FUTURE AND BEYOND' in Nova Gold. Add a Three.js / React Three Fiber animated liquid Möbius strip that renders as a looping 3D object with a flowing ripple/shimmer effect using Liquid Silver and Nova Gold metallic materials, placed as the hero's background or centerpiece behind the logo.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-14",
+          "msg-16"
+        ],
+        "quotes": [
+          "can we enlarge the logo some and is there a way to make the mobius loop look like it's liquid and has a moving flowing Ripple",
+          "Hero — Animated liquid Möbius strip (Three.js), logo, tagline"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Logo image is larger than before and centered in the hero",
+        "Tagline appears below the logo in Nova Gold Montserrat Bold all-caps",
+        "A Three.js animated Möbius strip plays on loop with visible ripple/flow animation",
+        "Animation does not block interaction with CTA buttons"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Create a 'THE TECHNOLOGY' section that displays the Frictionless Power Core Infographic image (frictionless-power-core.dim_900x1600.png) and the Engineering Analysis infographic image (engineering-analysis.dim_900x1600.png) side-by-side (stacked on mobile). Include a brief heading 'THE FRICTIONLESS POWER CORE' and a short description of the Universal Multi-Modal Core: single shaft supporting interchangeable VAWT wind, Gorlov hydro, and wave rectifier configurations, with Halbach magnetic levitation frictionless bearing system.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-16",
+          "msg-18"
+        ],
+        "quotes": [
+          "Technology section with Frictionless Power Core overview and engineering infographic images",
+          "The Technology — Frictionless Power Core overview with your infographic and engineering analysis images"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Both infographic images are displayed clearly at full readable size",
+        "Section heading uses Montserrat Bold all-caps brand styling",
+        "Layout is responsive: two columns on desktop, single column on mobile"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Create a 'DEPLOYMENTS IN ACTION' product renders section showcasing four environment cards, each with the corresponding uploaded image and a label: (1) Off-Grid Mountain Cabin (offgrid.png → offgrid-render.dim_1200x800.png), (2) Rural Farm Deck (farm-render.dim_1200x800.png), (3) Mars Colony (mars-render.dim_1200x800.png), (4) CAD Engineering Detail (cad-detail.dim_1200x800.png). Each card should show the image, environment name, and a one-line deployment description.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-16",
+          "msg-18"
+        ],
+        "quotes": [
+          "Product Renders — Spiral turbine deployments (off-grid cabin, farm, Mars colony renders)",
+          "Product renders section showcasing spiral turbine deployments in multiple environments"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All four render images are displayed in a responsive grid (2x2 on desktop, 1-column on mobile)",
+        "Each card includes the environment name and deployment description in brand typography",
+        "Images load correctly from the static assets folder"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Create a 'KEY SPECIFICATIONS' section displaying the following specs as a styled stat grid with Nova Gold numbers and Liquid Silver labels: Power Output (4.5–8.0 kW), Turbine Height (1.83 m), Blade Diameter (1.52 m), Primary Helix Angle (270°), Stator Count (4 Stacked Units), Bearing System (Frictionless Halbach Magnetic Levitation), Energy Modes (Wind / Hydro / Wave). Use large bold Nova Gold numerals for the values.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-18"
+        ],
+        "quotes": [
+          "Key Specs — Power output (4.5–8kW), multi-modal adaptability, frictionless bearing system"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All seven specification items are displayed",
+        "Nova Gold is used for numeric values and Liquid Silver for labels",
+        "Section is responsive and readable on mobile"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Create an 'INVESTOR OPPORTUNITY' section with a compelling pitch covering: market opportunity in distributed renewable energy, early-stage investment advantages, the technology's differentiation (multi-modal single core, frictionless operation, 4.5–8kW realistic output, 5–15 year ROI grid-tie), and a prominent call-to-action button labeled 'REQUEST INVESTOR DECK' that opens a mailto link or scrolls to the contact form. Style with a Nova Gold border/accent card on Deep Space Black.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-18"
+        ],
+        "quotes": [
+          "Investor Pitch — Why invest, market opportunity, early-stage advantages",
+          "Attract investors"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Section contains at least three investor value points",
+        "'REQUEST INVESTOR DECK' CTA button is prominent and functional",
+        "Section uses Nova Gold accent styling consistent with brand"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Create a 'BECOME A TEST SITE' section with a sign-up form for early adopters and location partners. The form must collect: Full Name, Email Address, Phone Number (optional), Location/Address, Property Type (dropdown: Residential, Farm/Agricultural, Commercial, Industrial, Remote/Off-Grid, Other), Available Energy Sources at Site (checkboxes: Wind, Water/Stream, Both), and a Message/Notes field. Include a Nova Gold submit button labeled 'APPLY AS TEST SITE'. On submission, store the entry in the Motoko backend and show a success confirmation message.",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-18"
+        ],
+        "quotes": [
+          "Become a Test Site — Call-to-action form for early adopters and location partners",
+          "get some early test subjects and locations"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Form renders with all listed fields",
+        "Dropdown and checkboxes function correctly",
+        "Submission saves data to the backend canister",
+        "Success confirmation is shown after successful submit",
+        "Form validates that Name, Email, and Location are not empty before submitting"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Create a 'GET INVOLVED' contact section with two sub-forms side by side (stacked on mobile): (1) Investor Inquiry — fields for Name, Email, Company, Investment Range (dropdown: Under $10K, $10K–$50K, $50K–$250K, $250K+), Message, and a 'SEND INQUIRY' button; (2) General Partnership — fields for Name, Email, Organization, Partnership Type (dropdown: Technology, Distribution, Research, Media, Other), and Message, with a 'SEND MESSAGE' button. Store submissions in the Motoko backend. Show success confirmations per form.",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-18"
+        ],
+        "quotes": [
+          "Contact / Get Involved — Investor inquiry and partnership contact forms"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Both sub-forms render with correct fields",
+        "Each form submits independently and stores data in the backend",
+        "Success confirmations display after each submission",
+        "Name and Email are required fields validated before submission"
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Implement Motoko backend functions to store and retrieve test site applications (from REQ-7) and contact/investor inquiries (from REQ-8). Define stable data structures for: TestSiteApplication (name, email, phone, location, propertyType, energySources, message, timestamp) and ContactInquiry (name, email, company, inquiryType, message, timestamp). Expose public update functions: submitTestSiteApplication, submitInvestorInquiry, submitPartnershipInquiry, and query functions: getTestSiteApplications, getInquiries (for admin review).",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-18"
+        ],
+        "quotes": [
+          "Become a Test Site — Call-to-action form",
+          "Contact / Get Involved — Investor inquiry and partnership contact forms"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All four update functions accept correctly typed arguments and persist data in stable variables",
+        "Query functions return stored records",
+        "Backend compiles without errors in Motoko"
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Render all uploaded product and infographic images as static assets from frontend/public/assets/generated. Update the existing HeroSection and LandingPage to reference these asset paths. Ensure the MOBIUS-NOVA logo (mobius-nova-logo.dim_1024x1024.png) is used in the hero and navbar/footer.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-14",
+          "msg-16"
+        ],
+        "quotes": [
+          "The first picture is the logo and tagline the rest are renders made by our cad files"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All images load from /assets/generated/ without 404 errors",
+        "Logo appears in hero section at enlarged size",
+        "Product render images appear in the Deployments section",
+        "Infographic images appear in the Technology section"
+      ]
+    }
+  ],
+  "constraints": [
+    "All brand text headings must be ALL-CAPS using Montserrat Bold",
+    "Color palette must strictly use: Deep Space Black (#0D0D0D), Liquid Silver (#C0C0C0), Nova Gold (#FFD700), Cosmic Blue (#1E90FF), Solar White (#FFFFFF)",
+    "Do not modify files in frontend/src/hooks/ or frontend/src/components/ui",
+    "Backend must remain a single Motoko actor in backend/main.mo",
+    "The live deployment must be stable — avoid patterns that caused previous blank-screen issues (e.g., unguarded Three.js imports, missing null checks)"
+  ],
+  "nonGoals": [
+    "User authentication or login system",
+    "Payment or e-commerce functionality",
+    "Real-time chat or messaging",
+    "Admin dashboard UI for viewing form submissions (backend query functions are sufficient for now)",
+    "Multi-page routing changes beyond the existing route structure"
+  ],
+  "imageRequirements": {
+    "required": [
+      "MOBIUS-NOVA logo: liquid silver Möbius strip with golden rose at center, golden animal figure, cosmic checkerboard background, company name MOBIUS-NOVA ENERGY in silver all-caps, tagline in Nova Gold below (mobius-nova-logo.dim_1024x1024.png)"
+    ],
+    "edits": [
+      "Crop and optimize the spiral turbine on Mars colony red desert scene for use as a product render card (Photo Jan 04 2026, 22 48 10.png > mars-render.dim_1200x800.png)",
+      "Crop and optimize the spiral turbine on rural farm wooden deck scene for use as a product render card (Photo Jan 04 2026, 22 48 10 (1).png > farm-render.dim_1200x800.png)",
+      "Crop and optimize the large spiral turbine next to off-grid mountain cabin scene for use as a product render card (offgrid.png > offgrid-render.dim_1200x800.png)",
+      "Crop and optimize the FreeCAD crossflow runner hydro CAD engineering screenshot for use as a product render card (20260217_235428.jpg > cad-detail.dim_1200x800.png)",
+      "Optimize the Mobius-NOVA Engineering Analysis infographic for web display (Mobius-NOVA Engineering Analysis (2).png > engineering-analysis.dim_900x1600.png)",
+      "Optimize the Frictionless Power Core infographic for web display (The Frictionless Power Core Infographic.png > frictionless-power-core.dim_900x1600.png)"
+    ]
+  }
+}

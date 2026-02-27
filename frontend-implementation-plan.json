@@ -1,0 +1,181 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "MOBIUS-NOVA Full Landing Page with Investor & Test Site Features",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Rebuild LandingPage.tsx as a complete single-page site with seven sections using brand colors and typography",
+      "acceptanceCriteria": [
+        "Page loads fully in both draft and live deployments without a blank screen",
+        "All seven sections are visible and scroll correctly",
+        "Brand colors, Montserrat font, and all-caps headings are consistently applied throughout"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/LandingPage.tsx",
+          "operation": "modify",
+          "description": "Rebuild as a complete single-page site with seven sections in order: Hero, The Technology, Product Renders, Key Specs, Investor Pitch, Become a Test Site, and Contact/Get Involved. Replace existing component imports with new section components. Apply Deep Space Black (#0D0D0D) background throughout. Ensure all headings use Montserrat Bold all-caps styling. Structure the page to prevent blank-screen rendering issues by ensuring all Three.js content is properly lazy-loaded and error-bounded."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Verify brand colors are defined: Deep Space Black (#0D0D0D), Liquid Silver (#C0C0C0), Nova Gold (#FFD700), Cosmic Blue (#1E90FF), Solar White (#FFFFFF). Ensure Montserrat Bold is loaded and available. Add utility classes for consistent all-caps heading styling if needed."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Create Hero section with enlarged logo, tagline, and animated liquid Möbius strip using Three.js",
+      "acceptanceCriteria": [
+        "Logo image is larger than before and centered in the hero",
+        "Tagline appears below the logo in Nova Gold Montserrat Bold all-caps",
+        "A Three.js animated Möbius strip plays on loop with visible ripple/flow animation",
+        "Animation does not block interaction with CTA buttons"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Display the MOBIUS-NOVA logo image from frontend/public/assets/generated/mobius-nova-logo.dim_1024x1024.png prominently centered and enlarged. Below the logo, show the tagline 'LIGHTING THE WAY TO THE FUTURE AND BEYOND' in Nova Gold (#FFD700) using Montserrat Bold all-caps. Add Three.js / React Three Fiber animated liquid Möbius strip as background or centerpiece behind the logo. The Möbius strip must render as a looping 3D object with a flowing ripple/shimmer effect using Liquid Silver (#C0C0C0) and Nova Gold (#FFD700) metallic materials. Implement proper lazy loading and error boundaries for Three.js to prevent blank-screen issues in production. Ensure CTA buttons remain interactive and are not blocked by the animation."
+        },
+        {
+          "path": "frontend/src/components/MobiusStripAnimation.tsx",
+          "operation": "create",
+          "description": "Create a Three.js / React Three Fiber component that renders an animated liquid Möbius strip. Implement looping animation with ripple/shimmer flow effect. Use Liquid Silver (#C0C0C0) and Nova Gold (#FFD700) metallic materials. Ensure the component is performance-optimized and can be safely lazy-loaded. Add fallback rendering for environments where WebGL is not available."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Create Technology section displaying Frictionless Power Core and Engineering Analysis infographics",
+      "acceptanceCriteria": [
+        "Both infographic images are displayed clearly at full readable size",
+        "Section heading uses Montserrat Bold all-caps brand styling",
+        "Layout is responsive: two columns on desktop, single column on mobile"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/TechnologySection.tsx",
+          "operation": "create",
+          "description": "Create a 'THE TECHNOLOGY' section that displays the Frictionless Power Core Infographic image from frontend/public/assets/generated/frictionless-power-core.dim_900x1600.png and the Engineering Analysis infographic image from frontend/public/assets/generated/engineering-analysis.dim_900x1600.png side-by-side on desktop, stacked on mobile. Include heading 'THE FRICTIONLESS POWER CORE' in Montserrat Bold all-caps. Add description: 'Universal Multi-Modal Core: single shaft supporting interchangeable VAWT wind, Gorlov hydro, and wave rectifier configurations, with Halbach magnetic levitation frictionless bearing system.' Use brand colors for text and backgrounds. Ensure images are displayed at full readable size."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Create Deployments in Action section showcasing four product render cards",
+      "acceptanceCriteria": [
+        "All four render images are displayed in a responsive grid (2x2 on desktop, 1-column on mobile)",
+        "Each card includes the environment name and deployment description in brand typography",
+        "Images load correctly from the static assets folder"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/DeploymentsSection.tsx",
+          "operation": "create",
+          "description": "Create a 'DEPLOYMENTS IN ACTION' section with four environment cards in a responsive grid (2x2 on desktop, single column on mobile). Card 1: Off-Grid Mountain Cabin using frontend/public/assets/generated/offgrid-render.dim_1200x800.png. Card 2: Rural Farm Deck using frontend/public/assets/generated/farm-render.dim_1200x800.png. Card 3: Mars Colony using frontend/public/assets/generated/mars-render.dim_1200x800.png. Card 4: CAD Engineering Detail using frontend/public/assets/generated/cad-detail.dim_1200x800.png. Each card must display the image, environment name in Montserrat Bold all-caps, and a one-line deployment description. Use Nova Gold for headings and Liquid Silver for descriptions. Add card hover effects with Cosmic Blue accents."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Create Key Specifications section displaying seven technical specs as styled stat grid",
+      "acceptanceCriteria": [
+        "All seven specification items are displayed",
+        "Nova Gold is used for numeric values and Liquid Silver for labels",
+        "Section is responsive and readable on mobile"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/KeySpecsSection.tsx",
+          "operation": "create",
+          "description": "Create a 'KEY SPECIFICATIONS' section displaying specs as a styled stat grid: Power Output (4.5–8.0 kW), Turbine Height (1.83 m), Blade Diameter (1.52 m), Primary Helix Angle (270°), Stator Count (4 Stacked Units), Bearing System (Frictionless Halbach Magnetic Levitation), Energy Modes (Wind / Hydro / Wave). Use large bold Nova Gold (#FFD700) numerals for values and Liquid Silver (#C0C0C0) for labels. Section heading in Montserrat Bold all-caps. Ensure responsive grid layout that works on mobile."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Create Investor Opportunity section with pitch content and CTA button",
+      "acceptanceCriteria": [
+        "Section contains at least three investor value points",
+        "'REQUEST INVESTOR DECK' CTA button is prominent and functional",
+        "Section uses Nova Gold accent styling consistent with brand"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/InvestorOpportunitySection.tsx",
+          "operation": "create",
+          "description": "Create an 'INVESTOR OPPORTUNITY' section with compelling pitch covering: market opportunity in distributed renewable energy, early-stage investment advantages, technology differentiation (multi-modal single core, frictionless operation, 4.5–8kW realistic output, 5–15 year ROI grid-tie). Include at least three distinct investor value points. Add prominent CTA button labeled 'REQUEST INVESTOR DECK' that scrolls to the contact form. Style with Nova Gold (#FFD700) border/accent card on Deep Space Black (#0D0D0D) background. Use Montserrat Bold all-caps for headings."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Create Become a Test Site section with application form submitting to backend",
+      "acceptanceCriteria": [
+        "Form renders with all listed fields",
+        "Dropdown and checkboxes function correctly",
+        "Submission saves data to the backend canister",
+        "Success confirmation is shown after successful submit",
+        "Form validates that Name, Email, and Location are not empty before submitting"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/TestSiteSection.tsx",
+          "operation": "create",
+          "description": "Create a 'BECOME A TEST SITE' section with sign-up form for early adopters and location partners. Form fields: Full Name (required), Email Address (required), Phone Number (optional), Location/Address (required), Property Type dropdown (Residential, Farm/Agricultural, Commercial, Industrial, Remote/Off-Grid, Other), Available Energy Sources checkboxes (Wind, Water/Stream, Both), Message/Notes textarea. Include Nova Gold (#FFD700) submit button labeled 'APPLY AS TEST SITE'. Implement form validation to ensure Name, Email, and Location are not empty. On submission, call backend submitTestSiteApplication function using the backend interface types (PropertyType enum, EnergySource enum). Display success confirmation message after successful submission. Handle errors gracefully. Use Montserrat Bold all-caps for section heading and labels."
+        },
+        {
+          "path": "frontend/src/hooks/useTestSiteSubmission.ts",
+          "operation": "create",
+          "description": "Create a custom hook that handles test site application submission. Use the useActor hook to get the backend actor. Implement submission logic that calls submitTestSiteApplication with properly typed arguments (name, email, phone, location, propertyType, energySources, message). Map form values to backend enum types (PropertyType, EnergySource). Return submission state (loading, error, success) and submission function. Use React Query for mutation management."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Create Get Involved contact section with investor and partnership sub-forms",
+      "acceptanceCriteria": [
+        "Both sub-forms render with correct fields",
+        "Each form submits independently and stores data in the backend",
+        "Success confirmations display after each submission",
+        "Name and Email are required fields validated before submission"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/GetInvolvedSection.tsx",
+          "operation": "create",
+          "description": "Create a 'GET INVOLVED' contact section with two sub-forms side by side (stacked on mobile). Form 1 - Investor Inquiry: Name (required), Email (required), Company (optional), Investment Range dropdown (Under $10K, $10K–$50K, $50K–$250K, $250K+), Message, 'SEND INQUIRY' button. Form 2 - General Partnership: Name (required), Email (required), Organization (optional), Partnership Type dropdown (Technology, Distribution, Research, Media, Other), Message, 'SEND MESSAGE' button. Each form submits independently to backend functions (submitInvestorInquiry, submitPartnershipInquiry). Display success confirmation per form. Validate Name and Email before submission. Use Montserrat Bold all-caps for headings, Nova Gold for submit buttons. Map dropdown values to backend enum types (InvestmentRange, PartnershipType)."
+        },
+        {
+          "path": "frontend/src/hooks/useContactSubmissions.ts",
+          "operation": "create",
+          "description": "Create custom hooks for investor inquiry and partnership inquiry submissions. Use the useActor hook to get the backend actor. Implement separate mutation functions for submitInvestorInquiry and submitPartnershipInquiry with properly typed arguments matching backend interface types (InvestmentRange enum, PartnershipType enum). Return submission states (loading, error, success) and submission functions for each form type. Use React Query for mutation management."
+        }
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "summary": "Ensure all uploaded images render correctly from static assets folder",
+      "acceptanceCriteria": [
+        "All images load from /assets/generated/ without 404 errors",
+        "Logo appears in hero section at enlarged size",
+        "Product render images appear in the Deployments section",
+        "Infographic images appear in the Technology section"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/LandingPage.tsx",
+          "operation": "modify",
+          "description": "Wire all new section components into the landing page in the correct order: HeroSection, TechnologySection, DeploymentsSection, KeySpecsSection, InvestorOpportunitySection, TestSiteSection, GetInvolvedSection. Ensure proper imports and component composition. Verify all image paths reference frontend/public/assets/generated/ correctly."
+        },
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Update footer to use the MOBIUS-NOVA logo image from frontend/public/assets/generated/mobius-nova-logo.dim_1024x1024.png. Ensure brand styling is consistent with the rest of the landing page. Keep existing social media links and navigation structure."
+        }
+      ]
+    }
+  ]
+}

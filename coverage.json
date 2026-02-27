@@ -1,0 +1,172 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-27T17:49:42.244Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 10,
+    "implemented": 9,
+    "items": [
+      {
+        "id": "REQ-1",
+        "summary": "Rebuild the LandingPage.tsx as a complete, fully-featured single-page site with the following sections in order: Hero, The Technology, Product Renders, Key Specs, Investor Pitch, Become a Test Site (sign-up form), and Contact/Get Involved. The page must use Deep Space Black (#0D0D0D) background, Liquid Silver (#C0C0C0), Nova Gold (#FFD700), and Cosmic Blue (#1E90FF) accents, Montserrat Bold all-caps headings throughout, and render correctly in production without crashing or blank-screen issues.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/LandingPage.tsx",
+          "frontend/src/index.css"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/LandingPage.tsx",
+          "frontend/src/index.css"
+        ]
+      },
+      {
+        "id": "REQ-10",
+        "summary": "Render all uploaded product and infographic images as static assets from frontend/public/assets/generated. Update the existing HeroSection and LandingPage to reference these asset paths. Ensure the MOBIUS-NOVA logo (mobius-nova-logo.dim_1024x1024.png) is used in the hero and navbar/footer.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/LandingPage.tsx",
+          "frontend/src/components/Footer.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/LandingPage.tsx",
+          "frontend/src/components/Footer.tsx"
+        ]
+      },
+      {
+        "id": "REQ-2",
+        "summary": "In the Hero section, display the MOBIUS-NOVA logo image (mobius-nova-logo.dim_1024x1024.png) prominently centered and enlarged. Below the logo show the tagline 'LIGHTING THE WAY TO THE FUTURE AND BEYOND' in Nova Gold. Add a Three.js / React Three Fiber animated liquid Möbius strip that renders as a looping 3D object with a flowing ripple/shimmer effect using Liquid Silver and Nova Gold metallic materials, placed as the hero's background or centerpiece behind the logo.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/HeroSection.tsx",
+          "frontend/src/components/MobiusStripAnimation.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/HeroSection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-3",
+        "summary": "Create a 'THE TECHNOLOGY' section that displays the Frictionless Power Core Infographic image (frictionless-power-core.dim_900x1600.png) and the Engineering Analysis infographic image (engineering-analysis.dim_900x1600.png) side-by-side (stacked on mobile). Include a brief heading 'THE FRICTIONLESS POWER CORE' and a short description of the Universal Multi-Modal Core: single shaft supporting interchangeable VAWT wind, Gorlov hydro, and wave rectifier configurations, with Halbach magnetic levitation frictionless bearing system.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/TechnologySection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/TechnologySection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-4",
+        "summary": "Create a 'DEPLOYMENTS IN ACTION' product renders section showcasing four environment cards, each with the corresponding uploaded image and a label: (1) Off-Grid Mountain Cabin (offgrid.png → offgrid-render.dim_1200x800.png), (2) Rural Farm Deck (farm-render.dim_1200x800.png), (3) Mars Colony (mars-render.dim_1200x800.png), (4) CAD Engineering Detail (cad-detail.dim_1200x800.png). Each card should show the image, environment name, and a one-line deployment description.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/DeploymentsSection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/DeploymentsSection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-5",
+        "summary": "Create a 'KEY SPECIFICATIONS' section displaying the following specs as a styled stat grid with Nova Gold numbers and Liquid Silver labels: Power Output (4.5–8.0 kW), Turbine Height (1.83 m), Blade Diameter (1.52 m), Primary Helix Angle (270°), Stator Count (4 Stacked Units), Bearing System (Frictionless Halbach Magnetic Levitation), Energy Modes (Wind / Hydro / Wave). Use large bold Nova Gold numerals for the values.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/KeySpecsSection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/KeySpecsSection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-6",
+        "summary": "Create an 'INVESTOR OPPORTUNITY' section with a compelling pitch covering: market opportunity in distributed renewable energy, early-stage investment advantages, the technology's differentiation (multi-modal single core, frictionless operation, 4.5–8kW realistic output, 5–15 year ROI grid-tie), and a prominent call-to-action button labeled 'REQUEST INVESTOR DECK' that opens a mailto link or scrolls to the contact form. Style with a Nova Gold border/accent card on Deep Space Black.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/InvestorOpportunitySection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/InvestorOpportunitySection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-7",
+        "summary": "Create a 'BECOME A TEST SITE' section with a sign-up form for early adopters and location partners. The form must collect: Full Name, Email Address, Phone Number (optional), Location/Address, Property Type (dropdown: Residential, Farm/Agricultural, Commercial, Industrial, Remote/Off-Grid, Other), Available Energy Sources at Site (checkboxes: Wind, Water/Stream, Both), and a Message/Notes field. Include a Nova Gold submit button labeled 'APPLY AS TEST SITE'. On submission, store the entry in the Motoko backend and show a success confirmation message.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/TestSiteSection.tsx",
+          "frontend/src/hooks/useTestSiteSubmission.ts"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/TestSiteSection.tsx",
+          "frontend/src/hooks/useTestSiteSubmission.ts"
+        ]
+      },
+      {
+        "id": "REQ-8",
+        "summary": "Create a 'GET INVOLVED' contact section with two sub-forms side by side (stacked on mobile): (1) Investor Inquiry — fields for Name, Email, Company, Investment Range (dropdown: Under $10K, $10K–$50K, $50K–$250K, $250K+), Message, and a 'SEND INQUIRY' button; (2) General Partnership — fields for Name, Email, Organization, Partnership Type (dropdown: Technology, Distribution, Research, Media, Other), and Message, with a 'SEND MESSAGE' button. Store submissions in the Motoko backend. Show success confirmations per form.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/GetInvolvedSection.tsx",
+          "frontend/src/hooks/useContactSubmissions.ts"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/GetInvolvedSection.tsx",
+          "frontend/src/hooks/useContactSubmissions.ts"
+        ]
+      },
+      {
+        "id": "REQ-9",
+        "summary": "Implement Motoko backend functions to store and retrieve test site applications (from REQ-7) and contact/investor inquiries (from REQ-8). Define stable data structures for: TestSiteApplication (name, email, phone, location, propertyType, energySources, message, timestamp) and ContactInquiry (name, email, company, inquiryType, message, timestamp). Expose public update functions: submitTestSiteApplication, submitInvestorInquiry, submitPartnershipInquiry, and query functions: getTestSiteApplications, getInquiries (for admin review).",
+        "status": "unknown",
+        "plannedFiles": [],
+        "matchedFiles": []
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/blob-storage/Mixin.mo",
+    "backend/blob-storage/Storage.mo",
+    "backend/main.mo",
+    "backend/migration.mo",
+    "build-request.json",
+    "build-template/README.md",
+    "caffeine.lock.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/public/assets/generated/cad-detail.dim_1200x800.png",
+    "frontend/public/assets/generated/frictionless-power-core.dim_900x1600.png",
+    "frontend/public/assets/generated/mars-render.dim_1200x800.png",
+    "frontend/public/assets/generated/mobius-nova-logo.dim_1024x1024.png",
+    "frontend/public/assets/generated/offgrid-render.dim_1200x800.png",
+    "frontend/src/backend.d.ts",
+    "frontend/src/backend.ts",
+    "frontend/src/components/BenefitsSection.tsx",
+    "frontend/src/components/CallToActionSection.tsx",
+    "frontend/src/components/DeploymentsSection.tsx",
+    "frontend/src/components/FeaturesSection.tsx",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/FounderExpertiseSection.tsx",
+    "frontend/src/components/GetInvolvedSection.tsx",
+    "frontend/src/components/HeroSection.tsx",
+    "frontend/src/components/InvestorOpportunitySection.tsx",
+    "frontend/src/components/KeySpecsSection.tsx",
+    "frontend/src/components/TechnologySection.tsx",
+    "frontend/src/components/TestSiteSection.tsx",
+    "frontend/src/declarations/backend.did.d.ts",
+    "frontend/src/declarations/backend.did.js",
+    "frontend/src/hooks/useContactSubmissions.ts",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/hooks/useTestSiteSubmission.ts",
+    "frontend/src/index.css",
+    "frontend/src/pages/LandingPage.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}
